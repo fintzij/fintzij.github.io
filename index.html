@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jon Fintzi — Biostatistician</title>
+    <meta name="description" content="Jon Fintzi — Associate Director, Statistical Methodology and Innovation at Bristol Myers Squibb. Bayesian statistics, adaptive trial design, multistate models, and open-source software.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#software" class="nav-link">Software</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+<!-- Hero / About -->
+<section id="about" class="hero">
+    <div class="hero-content">
+        <h1>Jon Fintzi</h1>
+        <p class="subtitle">Associate Director, Statistical Methodology &amp; Innovation<br>Bristol Myers Squibb</p>
+        <p class="bio">
+            I'm a biostatistician working at the intersection of methodological research and clinical drug development.
+            I develop and apply novel statistical methods — Bayesian adaptive designs, multistate models, disease progression models, and simulation-based approaches — to support decision-making across therapeutic areas including neuroscience, oncology, infectious disease, and immunology.
+        </p>
+        <p class="bio">
+            Previously, I spent six years at the <a href="https://www.niaid.nih.gov/">NIAID</a> Biostatistics Research Branch, where I served as lead statistician on clinical trials and cross-institutional collaborations for COVID-19, malaria, Ebola, and allergic diseases.
+            I hold a Ph.D. in Biostatistics from the University of Washington.
+        </p>
+        <div class="links">
+            <a href="https://github.com/fintzij" class="btn">GitHub</a>
+            <a href="https://orcid.org/0000-0002-6361-702X" class="btn">ORCID</a>
+            <a href="https://scholar.google.com/citations?user=FILL_IN" class="btn">Google Scholar</a>
+        </div>
+    </div>
+</section>
+
+<!-- Research Interests -->
+<section id="research" class="section">
+    <h2>Research Interests</h2>
+    <div class="card-grid">
+        <div class="card">
+            <h3>Adaptive &amp; Bayesian Trial Design</h3>
+            <p>Innovative clinical trial designs that incorporate accumulating data, external information, and Bayesian decision frameworks to improve efficiency and ethical balance.</p>
+        </div>
+        <div class="card">
+            <h3>Multistate &amp; Survival Models</h3>
+            <p>Semi-Markov and multistate models for disease progression, clinical outcomes, and interval-censored data, with applications in neurodegenerative disease and infectious disease.</p>
+        </div>
+        <div class="card">
+            <h3>Estimands &amp; Causal Inference</h3>
+            <p>Frameworks for defining treatment effects in the presence of intercurrent events, including work on SMART designs and the ICH E9(R1) estimand framework.</p>
+        </div>
+        <div class="card">
+            <h3>Statistical Computation</h3>
+            <p>High-performance computing, MCMC methods, simulation-based trial design optimization, and open-source software development in R, Julia, and C++.</p>
+        </div>
+        <div class="card">
+            <h3>Epidemic Modeling</h3>
+            <p>Stochastic compartmental models for outbreak surveillance, transmission dynamics, and vaccine efficacy estimation under partially observed data.</p>
+        </div>
+        <div class="card">
+            <h3>Benefit-Risk &amp; Decision Analysis</h3>
+            <p>Simulation strategies for quantifying probability of technical success, benefit-risk trade-offs, and supporting portfolio-level decision-making in drug development.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Software -->
+<section id="software" class="section alt-bg">
+    <h2>Open-Source Software</h2>
+    <div class="software-grid">
+        <a href="https://github.com/fintzij/MultistateModels.jl" class="software-card">
+            <div class="software-header">
+                <h3>MultistateModels.jl</h3>
+                <span class="lang julia">Julia</span>
+            </div>
+            <p>Simulation and inference for multistate models, especially semi-Markov models, fit to panel data. Supports flexible hazard specifications, exact and approximate likelihoods, and Bayesian inference.</p>
+            <span class="stars">★ 6</span>
+        </a>
+        <a href="https://github.com/fintzij/stemr" class="software-card">
+            <div class="software-header">
+                <h3>stemr</h3>
+                <span class="lang r">R</span>
+            </div>
+            <p>Approximate Bayesian inference for stochastic epidemic models via the linear noise approximation. Designed for fitting compartmental models to partially observed incidence and prevalence data.</p>
+            <span class="stars">★ 9</span>
+        </a>
+        <a href="https://github.com/fintzij/BDAepimodel" class="software-card">
+            <div class="software-header">
+                <h3>BDAepimodel</h3>
+                <span class="lang r">R</span>
+            </div>
+            <p>Tractable fitting of stochastic epidemic models via Bayesian data augmentation. Implements MCMC algorithms for SIR-type models with exact likelihood computation.</p>
+            <span class="stars">★ 5</span>
+        </a>
+        <a href="https://github.com/fintzij/ECctmc" class="software-card">
+            <div class="software-header">
+                <h3>ECctmc</h3>
+                <span class="lang cpp">C++</span>
+            </div>
+            <p>Simulation of sample paths for endpoint-conditioned continuous time Markov chains. Efficient C++ implementation via Rcpp.</p>
+            <span class="stars">★ 2</span>
+        </a>
+    </div>
+</section>
+
+<!-- Selected Publications -->
+<section id="publications" class="section">
+    <h2>Selected Publications</h2>
+    <p class="section-note">For a full list, see my <a href="https://orcid.org/0000-0002-6361-702X">ORCID profile</a>.</p>
+    <div class="pub-list">
+
+        <div class="pub">
+            <p class="pub-title">Assessing treatment efficacy for interval-censored endpoints using multistate semi-Markov models fit to multiple data streams</p>
+            <p class="pub-authors">Morsomme R, Liang CJ, Mateja A, Follmann DA, O'Brien MP, Wang C, &amp; <strong>Fintzi J</strong></p>
+            <p class="pub-venue"><em>Biostatistics</em>, 2025 &nbsp;·&nbsp; <span class="award">🏆 ASA Lifetime Data Science Best Paper Award, 2025</span></p>
+        </div>
+
+        <div class="pub">
+            <p class="pub-title">A vaccine to block <em>Plasmodium falciparum</em> transmission</p>
+            <p class="pub-authors">Healy SA, Sagara I, Assadou MH, …, <strong>Fintzi J</strong>, …, &amp; Duffy PE</p>
+            <p class="pub-venue"><em>NEJM Evidence</em>, 2025</p>
+        </div>
+
+        <div class="pub">
+            <p class="pub-title">A linear noise approximation for stochastic epidemic models fit to partially observed incidence counts</p>
+            <p class="pub-authors"><strong>Fintzi J</strong>, Wakefield J, &amp; Minin VN</p>
+            <p class="pub-venue"><em>Biometrics</em>, 2022 &nbsp;·&nbsp; <span class="award">🏆 Breslow Young Investigator Award, ASA, 2020</span></p>
+        </div>
+
+        <div class="pub">
+            <p class="pub-title">Deconstructing the treatment effect of remdesivir in the Adaptive COVID-19 Treatment Trial-1: Implications for critical care resource utilization</p>
+            <p class="pub-authors"><strong>Fintzi J</strong>, Bonnett T, Tebas P, Marconi VC, …, et al.</p>
+            <p class="pub-venue"><em>Clinical Infectious Diseases</em>, 2021</p>
+        </div>
+
+        <div class="pub">
+            <p class="pub-title">Assessing vaccine durability in randomized trials following placebo crossover</p>
+            <p class="pub-authors"><strong>Fintzi J</strong> &amp; Follmann D</p>
+            <p class="pub-venue"><em>Statistics in Medicine</em>, 2021</p>
+        </div>
+
+        <div class="pub">
+            <p class="pub-title">A deferred-vaccination design to assess durability of COVID-19 vaccine effect after the placebo group is vaccinated</p>
+            <p class="pub-authors">Follmann D, <strong>Fintzi J</strong>, Fay MP, Janes HE, Baden LR, et al.</p>
+            <p class="pub-venue"><em>Annals of Internal Medicine</em>, 2021</p>
+        </div>
+
+        <div class="pub">
+            <p class="pub-title">Immune correlates of protection by mRNA-1273 vaccine against SARS-CoV-2 in nonhuman primates</p>
+            <p class="pub-authors">Corbett KS, Nason MC, Flach B, Gagne M, O'Connell S, …, et al.</p>
+            <p class="pub-venue"><em>Science</em>, 2021</p>
+        </div>
+
+        <div class="pub">
+            <p class="pub-title">Semiparametric modeling of SARS-CoV-2 transmission using tests, cases, deaths, and seroprevalence data</p>
+            <p class="pub-authors">Bayer D, Goldstein IH, <strong>Fintzi J</strong>, Lumbard K, Ricotta E, Warner S, et al.</p>
+            <p class="pub-venue"><em>The Annals of Applied Statistics</em>, 2024</p>
+        </div>
+
+        <div class="pub">
+            <p class="pub-title">Efficient data augmentation for fitting stochastic epidemic models to prevalence data</p>
+            <p class="pub-authors"><strong>Fintzi J</strong>, Cui X, Wakefield J, &amp; Minin VN</p>
+            <p class="pub-venue"><em>Journal of Computational and Graphical Statistics</em>, 2017</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Awards -->
+<section id="awards" class="section alt-bg">
+    <h2>Awards</h2>
+    <ul class="awards-list">
+        <li><strong>Best Paper Award</strong> — ASA Lifetime Data Science Section, Joint Statistical Meetings, 2025</li>
+        <li><strong>NIH Director's Award</strong> — Advancing COVID-19 Vaccines: ACTIV and HHS Collaborations, 2021</li>
+        <li><strong>Breslow Young Investigator Award</strong> — ASA Statistics in Epidemiology Section, Joint Statistical Meetings, 2020</li>
+        <li><strong>Best Oral Presentation</strong> — 28th International Biometric Conference, 2016</li>
+    </ul>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>
+        <a href="mailto:fintzij@gmail.com">fintzij@gmail.com</a><br>
+        <a href="https://github.com/fintzij">github.com/fintzij</a><br>
+        <a href="https://orcid.org/0000-0002-6361-702X">ORCID: 0000-0002-6361-702X</a>
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Jon Fintzi</p>
+</footer>
+
+</body>
+</html>
