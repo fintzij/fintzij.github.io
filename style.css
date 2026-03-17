@@ -276,6 +276,14 @@ h2 {
     gap: 1.5rem;
 }
 
+.pub-subsection {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
 .pub {
     border-left: 3px solid var(--accent);
     padding-left: 1.25rem;
